@@ -28,6 +28,12 @@ func NewServer(store db.Store) *Server {
 
 	router := gin.Default()
 
+	// User routes
+	router.POST("/users", server.createUser)
+	router.GET("/users/:username", server.getUser)
+	// router.GET("/users", server.listUsers)
+
+	// Account routes
 	router.POST("/accounts", server.createAccount)
 	router.GET("/accounts/:id", server.getAccount)
 	router.GET("/accounts", server.listAccount)

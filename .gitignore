@@ -1,0 +1,55 @@
+# Binary files
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+*.test
+*.out
+
+# Output directories
+bin/
+dist/
+
+# Go specific
+*.o
+*.a
+_obj
+_test
+_testmain.go
+
+# IDE specific
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+
+# Environment files
+*.env
+!app.env
+
+# Log files
+*.log
+
+# Database files
+*.db
+*.sqlite
+*.sqlite3
+
+# Temporary files
+tmp/
+temp/
+
+# Dependencies
+vendor/
+
+# Air live reload
+tmp/
+
+# Local development overrides
+override.yaml
+docker-compose.override.yml
+
+# Cursor specific
+.cursor/ 
